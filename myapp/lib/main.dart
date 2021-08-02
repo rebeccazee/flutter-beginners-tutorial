@@ -17,7 +17,9 @@ class Home extends StatelessWidget {
               centerTitle: true,
               backgroundColor: Colors.red[600]),
           body: Center(
-            child: Image.asset('assets/space-3.jpg'),
+            // child: Image.asset('assets/space-3.jpg'),
+            child: Image.network(
+                'https://sophiainstituttet.dk/wp-content/uploads/2020/01/jack-cain-cbijoXPahg-unsplash-1-scaled.jpg'),
           ),
           floatingActionButton: FloatingActionButton(
             backgroundColor: Colors.red[600],
