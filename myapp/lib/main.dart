@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-  home: Scaffold(
-    appBar: AppBar(
-      title: Text('my first app'),
-      centerTitle: true,
-    ),
-    body: Center(
-      child: Text('hello, ninjas!'),
-    ),
-    floatingActionButton: FloatingActionButton(
-      child: Text('click'),
-    ),
-  ),
-));
-
-
+      home: Scaffold(
+        appBar: AppBar(
+          // title: const Text('my first app'),
+          title: const Text('my first app'),
+          centerTitle: true,
+        ),
+        body: const Center(
+          child: Text('hello, ninjas!'),
+        ),
+        floatingActionButton: const FloatingActionButton(
+          child: Text('click'),
+          onPressed: null,
+        ),
+      ),
+    ));
