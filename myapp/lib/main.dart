@@ -41,23 +41,55 @@ class Home extends StatelessWidget {
 //    size: 50.0
 //  ),
 
-//  RaisedButton(
-//    onPressed: () {
-//      print('you clicked me');
-//    },
-//    child: Text('click me'),
-//    color: Colors.lightBlue,
-//  ),
+/* final ButtonStyle raisedButtonStyle = ElevatedButton.styleFrom(
+  onPrimary: Colors.black87,
+  primary: Colors.lightBlue,
+  minimumSize: const Size(88, 36),
+  padding: const EdgeInsets.symmetric(horizontal: 16),
+  shape: const RoundedRectangleBorder(
+    borderRadius: BorderRadius.all(Radius.circular(2)),
+  ),
+);
+ElevatedButton(
+  style: raisedButtonStyle,
+  onPressed: () {
+    print('you clicked me');
+  },
+  child: const Text('click me'),
+) */
 
-//  FlatButton(
-//    onPressed: () {},
-//    child: Text('click me again'),
-//    color: Colors.amber
-//  ),
+/* final ButtonStyle flatButtonStyle = TextButton.styleFrom(
+  primary: Colors.black87, // Text color
+  backgroundColor: Colors.lightBlue,
+  minimumSize: const Size(88, 36),
+  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+  shape: const RoundedRectangleBorder(
+    borderRadius: BorderRadius.all(Radius.circular(2.0)),
+  ),
+);
 
-//  RaisedButton.icon(
-//    onPressed: () {},
-//    icon: Icon(Icons.mail),
-//    label: Text('mail me'),
-//    color: Colors.amber,
-//  ),
+TextButton(
+  style: flatButtonStyle,
+  onPressed: () {
+    print('you clicked me');
+  },
+  child: const Text('click me'),
+), */
+
+/* final ButtonStyle raisedButtonStyleIcon = ElevatedButton.styleFrom(
+  onPrimary: Colors.black87,
+  primary: Colors.amber,
+  minimumSize: const Size(88, 36),
+  padding: const EdgeInsets.symmetric(horizontal: 16),
+  shape: const RoundedRectangleBorder(
+    borderRadius: BorderRadius.all(Radius.circular(2)),
+  ),
+);
+ElevatedButton.icon(
+  style: raisedButtonStyleIcon,
+  onPressed: () {
+    print('you clicked me');
+  },
+  icon: const Icon(Icons.mail),
+  label: const Text('mail me'),
+) */
