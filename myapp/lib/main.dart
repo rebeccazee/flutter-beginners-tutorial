@@ -3,17 +3,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(Home());
 
 class Home extends StatelessWidget {
-  final ButtonStyle flatButtonStyle = TextButton.styleFrom(
-    primary: Colors.black87, // Text color
-    backgroundColor: Colors.amber,
-    minimumSize: const Size(88, 36),
-    padding: const EdgeInsets.symmetric(horizontal: 16.0),
-    shape: const RoundedRectangleBorder(
-      borderRadius: BorderRadius.all(Radius.circular(2.0)),
-    ),
-  );
-
-  Home({
+  const Home({
     Key? key,
   }) : super(key: key);
 
@@ -22,29 +12,35 @@ class Home extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
-          title: const Text('my first app'),
+          title: Text('my first app'),
           centerTitle: true,
           backgroundColor: Colors.red[600]),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.end,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          const Text('hello, world'),
-          TextButton(
-            style: flatButtonStyle,
-            onPressed: () {},
-            child: const Text('click me'),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            color: Colors.cyan,
+            child: Text('one'),
           ),
           Container(
-              color: Colors.cyan,
-              padding: const EdgeInsets.all(30.0),
-              child: const Text('inside container')),
+            padding: EdgeInsets.all(30.0),
+            color: Colors.pinkAccent,
+            child: Text('two'),
+          ),
+          Container(
+            padding: EdgeInsets.all(40.0),
+            color: Colors.amber,
+            child: Text('three'),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.red[600],
-          child: const Text('click'),
-          onPressed: () {}),
+        backgroundColor: Colors.red[600],
+        child: Text('click'),
+        onPressed: () {},
+      ),
     ));
   }
 }
