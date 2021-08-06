@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(
-  home: Home(),
-));
+void main() => runApp(Home());
 
 class Home extends StatelessWidget {
+  const Home({
+    Key? key,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+        home: Scaffold(
       appBar: AppBar(
           title: Text('my first app'),
           centerTitle: true,
-          backgroundColor: Colors.red[600]
-      ),
+          backgroundColor: Colors.red[600]),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -37,7 +39,8 @@ class Home extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.red[600],
         child: Text('click'),
+        onPressed: () {},
       ),
-    );
+    ));
   }
 }
