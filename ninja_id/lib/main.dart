@@ -9,6 +9,7 @@ class NinjaCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const email = 'chun.li@thenetninja.co.uk';
     return MaterialApp(
         title: 'Ninja ID Card',
         home: Scaffold(
@@ -88,22 +89,18 @@ class NinjaCard extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 30.0),
-                Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      color: Colors.grey[400],
-                    ),
-                    SizedBox(width: 10.0),
-                    Text(
-                      'chun.li@thenetninja.co.uk',
-                      style: TextStyle(
-                        color: Colors.grey[400],
-                        fontSize: 18.0,
-                        letterSpacing: 1.0,
-                      ),
-                    )
-                  ],
+                TextButton.icon(
+                  style: TextButton.styleFrom(
+                      primary: Colors.grey[400],
+                      padding: EdgeInsets.only(left: 0)),
+                  onPressed: () {
+                    print('Email: $email');
+                  },
+                  icon: const Icon(Icons.email),
+                  label: Text(
+                    '$email',
+                    style: TextStyle(fontSize: 18, letterSpacing: 1),
+                  ),
                 ),
               ],
             ),
