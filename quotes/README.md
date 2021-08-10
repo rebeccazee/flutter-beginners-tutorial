@@ -1,6 +1,6 @@
 # quotes
 
-A new Flutter application.
+A new Flutter project.
 
 ## Getting Started
 
