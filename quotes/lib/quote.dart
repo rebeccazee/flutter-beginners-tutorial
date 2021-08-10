@@ -1,11 +1,10 @@
 class Quote {
-
-  String text;
-  String author;
+  String? text;
+  String? author;
 
   //  normal constructor, as we've already seen
 
-  //  Quote(String author, String text){
+  //  Quote(String author, String text) {
   //    this.text = text;
   //    this.author = author;
   //  }
@@ -20,6 +19,5 @@ class Quote {
   // constructor with named parameters
   // & automatically assigns named arguments to class properties
 
-  Quote({ this.text, this.author });
-
+  Quote({this.text, this.author});
 }
